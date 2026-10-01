@@ -1,0 +1,17 @@
+name: Ask my agent
+description: Ask a question about my work — an agent replies as a comment, usually within a minute.
+title: "[ask] "
+labels: [ask]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An AI agent answers this from my published portfolio content (projects, experience, skills).
+        It can't see anything private, and I read every thread myself. Please keep it to one question.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      placeholder: e.g. Have you built a RAG system that has to stay HIPAA-compliant? How did you handle PHI?
+    validations:
+      required: true
